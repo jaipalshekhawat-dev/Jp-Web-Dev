@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Services — Jaipal Shekhawat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+<div class="cursor">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+</div>
+
+<!-- SCROLL PROGRESS -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="services.html">Services</a>
+  <a href="skills.html">Skills</a>
+  <a href="case-studies.html">Case Studies</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-dot"><img src="images/jp-logo.png" alt="JP Web"></div>
+    
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="skills.html">Skills</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html" class="nav-cta">Contact</a>
+  </div>
+  <button class="nav-theme" onclick="toggleTheme()" title="Toggle theme">☀️</button>
+  <button class="hamburger" id="hamburger" onclick="toggleMobile()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ==================== SERVICES PAGE ==================== -->
+
+<div class="page" id="page-services">
+  <section>
+    <div class="section-label">What I offer</div>
+
+    <h1 class="section-title">
+      Premium
+      <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent">
+        Services
+      </span>
+    </h1>
+
+    <p class="section-sub">
+      I provide modern web design, frontend UI, app UI design, responsive layouts,
+      SEO-friendly structure, and performance-focused website solutions.
+    </p>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">⚡</div>
+        <div class="service-title">Front-End Web Design</div>
+        <div class="service-desc">
+          Clean, modern and responsive frontend design using HTML, CSS, Bootstrap,
+          JavaScript and modern UI practices.
+        </div>
+        <div class="service-price">Custom Quote <small>/ project</small></div>
+        <div class="service-features">
+          <div class="service-feat">Pixel-perfect web layouts</div>
+          <div class="service-feat">HTML, CSS, Bootstrap & JavaScript</div>
+          <div class="service-feat">Cross-browser compatible UI</div>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">🎨</div>
+        <div class="service-title">UI/UX Design</div>
+        <div class="service-desc">
+          User-friendly interface design for websites and digital products with
+          clean layout, visual balance and smooth user experience.
+        </div>
+        <div class="service-price">Custom Quote <small>/ project</small></div>
+        <div class="service-features">
+          <div class="service-feat">Website UI design</div>
+          <div class="service-feat">Figma wireframes & layouts</div>
+          <div class="service-feat">User-friendly visual structure</div>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">📱</div>
+        <div class="service-title">App UI Design</div>
+        <div class="service-desc">
+          Modern mobile app screens and UI layouts for Android, iOS and React Native
+          based app ideas.
+        </div>
+        <div class="service-price">Custom Quote <small>/ project</small></div>
+        <div class="service-features">
+          <div class="service-feat">Mobile app screen design</div>
+          <div class="service-feat">Clean user flow and layout</div>
+          <div class="service-feat">Figma based app UI</div>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">📐</div>
+        <div class="service-title">Responsive Design</div>
+        <div class="service-desc">
+          Mobile, tablet and desktop friendly website layouts that work smoothly
+          across all screen sizes.
+        </div>
+        <div class="service-price">Custom Quote <small>/ project</small></div>
+        <div class="service-features">
+          <div class="service-feat">Mobile-first layout</div>
+          <div class="service-feat">Tablet and desktop responsive</div>
+          <div class="service-feat">Touch-friendly interface</div>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">🔄</div>
+        <div class="service-title">Website Redesign</div>
+        <div class="service-desc">
+          Redesign old websites into modern, premium and conversion-friendly
+          layouts without losing the brand value.
+        </div>
+        <div class="service-price">Custom Quote <small>/ project</small></div>
+        <div class="service-features">
+          <div class="service-feat">Modern visual upgrade</div>
+          <div class="service-feat">Better UI and layout structure</div>
+          <div class="service-feat">SEO-friendly page structure</div>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">🛒</div>
+        <div class="service-title">E-Commerce UI</div>
+        <div class="service-desc">
+          Product listing, product detail, cart, checkout and offer page UI design
+          for e-commerce websites.
+        </div>
+        <div class="service-price">Custom Quote <small>/ project</small></div>
+        <div class="service-features">
+          <div class="service-feat">Product page UI</div>
+          <div class="service-feat">Cart and checkout layout</div>
+          <div class="service-feat">Offer and deals page design</div>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">🌐</div>
+        <div class="service-title">WordPress Design</div>
+        <div class="service-desc">
+          WordPress website design, page updates, landing pages, content layout and
+          frontend styling.
+        </div>
+        <div class="service-price">Custom Quote <small>/ project</small></div>
+        <div class="service-features">
+          <div class="service-feat">WordPress page design</div>
+          <div class="service-feat">Theme styling and layout</div>
+          <div class="service-feat">Content and section updates</div>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">🚀</div>
+        <div class="service-title">SEO & Performance Optimization</div>
+        <div class="service-desc">
+          Website speed, image optimization, SEO-friendly HTML structure and better
+          Core Web Vitals focused updates.
+        </div>
+        <div class="service-price">Custom Quote <small>/ project</small></div>
+        <div class="service-features">
+          <div class="service-feat">Image optimization</div>
+          <div class="service-feat">SEO-friendly layout</div>
+          <div class="service-feat">Speed and performance improvement</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="section-label">How it works</div>
+
+    <h2 class="section-title">
+      My
+      <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent">
+        Process
+      </span>
+    </h2>
+
+ 
+    <div class="process-grid">
+  <div class="process-card glass reveal">
+    <div class="process-num">01</div>
+    <div class="process-title">Requirement</div>
+    <div class="process-desc">
+      Understanding your goals, audience, content, pages, and responsive needs.
+    </div>
+  </div>
+
+  <div class="process-card glass reveal">
+    <div class="process-num">02</div>
+    <div class="process-title">UI Design</div>
+    <div class="process-desc">
+      Creating clean layouts, app screens, section flow, and user-friendly design.
+    </div>
+  </div>
+
+  <div class="process-card glass reveal">
+    <div class="process-num">03</div>
+    <div class="process-title">Frontend</div>
+    <div class="process-desc">
+      Converting approved design into responsive HTML, CSS, Bootstrap, and JS.
+    </div>
+  </div>
+
+  <div class="process-card glass reveal">
+    <div class="process-num">04</div>
+    <div class="process-title">Testing</div>
+    <div class="process-desc">
+      Testing mobile, tablet, laptop, desktop, browsers, and fixing UI issues.
+    </div>
+  </div>
+
+  <div class="process-card glass reveal">
+    <div class="process-num">05</div>
+    <div class="process-title">Handoff</div>
+    <div class="process-desc">
+      Organizing clean frontend files, CSS, JS, images, and final delivery.
+    </div>
+  </div>
+   </div>
+
+
+  </section>
+
+  <!-- FAQ -->
+<section class="faq-section"  style="padding-top:0">
+
+  <div class="faq-wrapper">
+
+    <div class="faq-list">
+
+      <div class="section-label">Common questions</div>
+      <h2 class="section-title" style="padding-bottom: 40px;">FAQ</h2>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          What services do you provide?
+          <span class="faq-chevron">▼</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            I provide front-end web design, UI/UX design, app UI design, responsive
+            website design, WordPress design, e-commerce UI, website redesign,
+            SEO-friendly layout, and performance optimization.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Do you work on backend development?
+          <span class="faq-chevron">▼</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            No, my main focus is front-end design and UI development. I prepare clean
+            HTML, CSS, JavaScript, images, and responsive frontend files ready for
+            backend integration or client handoff.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Do you design mobile app screens?
+          <span class="faq-chevron">▼</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            Yes, I design modern mobile app screens, user flows, dashboard screens,
+            login/signup screens, product screens, and app UI layouts in Figma.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Do you create responsive websites?
+          <span class="faq-chevron">▼</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            Yes, I create mobile, tablet, laptop, and desktop responsive layouts
+            using HTML, CSS, Bootstrap, JavaScript, WordPress, and modern frontend tools.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Do you provide website updates and maintenance?
+          <span class="faq-chevron">▼</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            Yes, I help with website updates, content changes, landing page updates,
+            UI fixes, responsive issues, image optimization, SEO structure updates,
+            and frontend performance improvements.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- NEW ADD: FAQ Right Image -->
+    <div class="faq-right">
+      <img 
+        src="images/faq-jaipal.png" 
+        alt="FAQ support by Jaipal Shekhawat" 
+        class="faq-img"
+      >
+    </div>
+
+  </div>
+
+</section>
+
+</div>
+
+
+<!-- FOOTER (shown on all pages via JS) -->
+<footer id="siteFooter">
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand"><a href="index.html"> <img src="images/jp-logo-footer.png" alt="JP Web"> </a></div>
+      <p class="footer-desc">Front-End Web Designer • Design • Develop • Deliver</p>
+      <div class="footer-socials" style="margin-top:24px">
+        <a href="#" class="social-icon">🐦</a>
+        <a href="#" class="social-icon">💼</a>
+        <a href="#" class="social-icon">🐙</a>
+        <a href="#" class="social-icon">📸</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Navigation</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">More</div>
+      <ul class="footer-links">
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Services</div>
+      <ul class="footer-links">
+        <li><a href="#">React Development</a></li>
+        <li><a href="#">UI/UX Design</a></li>
+        <li><a href="#">Performance</a></li>
+        <li><a href="#">Redesign</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Jaipal Shekhawat. All rights reserved.</span>
+    <span style="color:rgba(255,255,255,0.4)">Crafted with ❤️ and ☕</span>
+  </div>
+</footer>
+
+<script src="js/data.js" defer></script>
+<script src="js/projects.js" defer></script>
+<script src="js/skills.js" defer></script>
+<script src="js/theme.js" defer></script>
+<script src="js/menu.js" defer></script>
+<script src="js/faq.js" defer></script>
+<script src="js/form.js" defer></script>
+<script src="js/animations.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

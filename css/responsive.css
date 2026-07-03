@@ -1,0 +1,17 @@
+/* Responsive CSS */
+
+@media (max-width: 900px) {
+    .hero-floats { display: none; }
+    .about-hero { grid-template-columns: 1fr; }
+    .about-img { max-width: 400px; aspect-ratio: 1; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+  }
+
+@media (max-width: 700px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .footer-top { grid-template-columns: 1fr; }
+    .hero-title { font-size: 2.6rem; }
+  }

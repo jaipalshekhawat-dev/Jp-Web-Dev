@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Contact — Jaipal Shekhawat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+</div>
+
+<!-- SCROLL PROGRESS -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="services.html">Services</a>
+  <a href="skills.html">Skills</a>
+  <a href="case-studies.html">Case Studies</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-dot"><img src="images/jp-logo.png" alt="JP Web"></div>
+    
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="skills.html">Skills</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html" class="nav-cta">Contact</a>
+  </div>
+  <button class="nav-theme" onclick="toggleTheme()" title="Toggle theme">☀️</button>
+  <button class="hamburger" id="hamburger" onclick="toggleMobile()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+
+<!-- ==================== CONTACT PAGE ==================== -->
+
+
+<div class="page" id="page-contact">
+  <section>
+    <div class="section-label">Get in touch</div>
+
+    <h1 class="section-title">
+      Let's
+      <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent">
+        Connect
+      </span>
+    </h1>
+
+    <p class="section-sub">
+      Have a website, UI design, app screen, or frontend project in mind?
+      I’d love to hear about it. Let’s create something clean and responsive together.
+    </p>
+
+    <div class="availability">
+      <div class="avail-dot"></div>
+      Currently available for new projects
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+
+        <!-- Email -->
+        <div class="contact-item glass reveal">
+          <div class="contact-item-icon">✉️</div>
+
+          <div>
+            <div class="contact-item-label">Email</div>
+
+            <div class="contact-item-val">
+              <a 
+                href="mailto:jaipalshekhawat432@gmail.com" 
+                style="color:inherit;text-decoration:none"
+              >
+                jaipalshekhawat432@gmail.com
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="contact-item glass reveal">
+          <div class="contact-item-icon">📞</div>
+
+          <div>
+            <div class="contact-item-label">Phone</div>
+
+            <div class="contact-item-val">
+              <a 
+                href="tel:+919828118531" 
+                style="color:inherit;text-decoration:none"
+              >
+                +91 98281 18531
+              </a>
+            </div>
+
+            <div class="contact-item-val" style="margin-top:4px">
+              <a 
+                href="tel:+916378354429" 
+                style="color:inherit;text-decoration:none"
+              >
+                +91 63783 54429
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- WhatsApp -->
+        <div class="contact-item glass reveal">
+          <div class="contact-item-icon">💬</div>
+
+          <div>
+            <div class="contact-item-label">WhatsApp</div>
+
+            <div class="contact-item-val">
+              <a 
+                href="https://wa.me/919828118531" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                style="color:inherit;text-decoration:none"
+              >
+                +91 98281 18531
+              </a>
+            </div>
+
+            <div class="contact-item-val" style="margin-top:4px">
+              <a 
+                href="https://wa.me/916378354429" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                style="color:inherit;text-decoration:none"
+              >
+                +91 63783 54429
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div class="contact-item glass reveal">
+          <div class="contact-item-icon">📍</div>
+
+          <div>
+            <div class="contact-item-label">Location</div>
+
+            <div class="contact-item-val">
+              Jaipur, Rajasthan, India — Remote Friendly
+            </div>
+          </div>
+        </div>
+
+        <!-- Response Time -->
+        <div class="contact-item glass reveal">
+          <div class="contact-item-icon">🕐</div>
+
+          <div>
+            <div class="contact-item-label">Response Time</div>
+
+            <div class="contact-item-val">
+              Within 24 hours
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div style="padding:20px">
+          <div style="font-size:0.8rem;color:var(--ink3);font-weight:600;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:16px">
+            Find me on
+          </div>
+
+          <div class="footer-socials">
+            <a 
+              href="https://github.com/JP0209y" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="social-icon" 
+              style="width:44px;height:44px;font-size:1rem" 
+              aria-label="GitHub"
+            >
+              🐙
+            </a>
+
+            <a 
+              href="#" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="social-icon" 
+              style="width:44px;height:44px;font-size:1rem" 
+              aria-label="LinkedIn"
+            >
+              💼
+            </a>
+
+            <a 
+              href="#" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="social-icon" 
+              style="width:44px;height:44px;font-size:1rem" 
+              aria-label="Instagram"
+            >
+              📸
+            </a>
+
+            <a 
+              href="https://wa.me/919828118531" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="social-icon" 
+              style="width:44px;height:44px;font-size:1rem" 
+              aria-label="WhatsApp"
+            >
+              💬
+            </a>
+
+            <a 
+              href="mailto:jaipalshekhawat432@gmail.com" 
+              class="social-icon" 
+              style="width:44px;height:44px;font-size:1rem" 
+              aria-label="Email"
+            >
+              ✉️
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="glass" style="padding:40px;border-radius:var(--radius)">
+        <h2 style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.4rem;color:var(--ink);margin-bottom:28px">
+          Send a Message
+        </h2>
+
+        <div class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">First Name</label>
+              <input 
+                class="form-input" 
+                type="text" 
+                placeholder="Your first name"
+              >
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Last Name</label>
+              <input 
+                class="form-input" 
+                type="text" 
+                placeholder="Your last name"
+              >
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input 
+              class="form-input" 
+              type="email" 
+              placeholder="your@email.com"
+            >
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Project Type</label>
+
+            <select class="form-input" style="cursor:pointer">
+              <option>Select a service...</option>
+              <option>Front-End Web Design</option>
+              <option>UI/UX Design</option>
+              <option>App UI Design</option>
+              <option>Responsive Design</option>
+              <option>WordPress Design</option>
+              <option>E-Commerce UI</option>
+              <option>Website Redesign</option>
+              <option>SEO & Performance Optimization</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Message</label>
+
+            <textarea 
+              class="form-textarea" 
+              placeholder="Tell me about your project, goals, pages, and timeline..."
+            ></textarea>
+          </div>
+
+          <button 
+            class="btn btn-primary" 
+            style="width:100%;justify-content:center" 
+            onclick="submitForm()"
+          >
+            Send Message ✉️
+          </button>
+
+          <div class="form-success" id="formSuccess">
+            ✅ Message sent! I’ll get back to you within 24 hours.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+<!-- FOOTER (shown on all pages via JS) -->
+<footer id="siteFooter">
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand"><a href="index.html"> <img src="images/jp-logo-footer.png" alt="JP Web"> </a></div>
+      <p class="footer-desc">Front-End Web Designer • Design • Develop • Deliver</p>
+      <div class="footer-socials" style="margin-top:24px">
+        <a href="#" class="social-icon">🐦</a>
+        <a href="#" class="social-icon">💼</a>
+        <a href="#" class="social-icon">🐙</a>
+        <a href="#" class="social-icon">📸</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Navigation</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">More</div>
+      <ul class="footer-links">
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Services</div>
+      <ul class="footer-links">
+        <li><a href="#">React Development</a></li>
+        <li><a href="#">UI/UX Design</a></li>
+        <li><a href="#">Performance</a></li>
+        <li><a href="#">Redesign</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Jaipal Shekhawat. All rights reserved.</span>
+    <span style="color:rgba(255,255,255,0.4)">Crafted with ❤️ and ☕</span>
+  </div>
+</footer>
+
+<script src="js/data.js" defer></script>
+<script src="js/projects.js" defer></script>
+<script src="js/skills.js" defer></script>
+<script src="js/theme.js" defer></script>
+<script src="js/menu.js" defer></script>
+<script src="js/faq.js" defer></script>
+<script src="js/form.js" defer></script>
+<script src="js/animations.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

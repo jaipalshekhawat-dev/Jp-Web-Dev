@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Jaipal Shekhawat — Front-End Web Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+</div>
+
+<!-- SCROLL PROGRESS -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="services.html">Services</a>
+  <a href="skills.html">Skills</a>
+  <a href="case-studies.html">Case Studies</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-dot"><img src="images/jp-logo.png" alt="JP Web"></div>
+    
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="skills.html">Skills</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html" class="nav-cta">Contact</a>
+  </div>
+  <button class="nav-theme" onclick="toggleTheme()" title="Toggle theme">☀️</button>
+  <button class="hamburger" id="hamburger" onclick="toggleMobile()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ==================== HOME PAGE ==================== -->
+<div class="page" id="page-home">
+
+  <!-- HERO -->
+ 
+  <!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <div class="hero-badge-dot"></div>
+      Design • Develop • Deliver
+    </div>
+
+    <h1 class="hero-title">
+      Jaipal Shekhawat<br>
+      <span class="highlight">Front-End Web Designer</span>
+    </h1>
+
+    <p class="hero-sub">
+      I build modern, responsive, high-performance websites with premium UI/UX,
+      clean frontend code, and strong visual design.
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="projects.html">
+        View Projects <span class="btn-arrow">→</span>
+      </a>
+      <a class="btn btn-outline" href="contact.html">Hire Me</a>
+    </div>
+  </div>
+
+  <!-- NEW ADD: Hero Profile Image -->
+  <div class="hero-profile">
+    <img 
+      src="images/jaipal-hero.png" 
+      alt="Jaipal Shekhawat Front-End Web Designer" 
+      class="hero-profile-img"
+    >
+  </div>
+
+  <div class="hero-floats">
+    <div class="float-card glass">
+      <div class="float-label">Projects Done</div>
+      <div class="float-val">50+</div>
+      <div class="float-sub">Across 5 countries</div>
+    </div>
+
+    <div class="float-card glass">
+      <div class="float-label">Client Rating</div>
+      <div class="float-val">4.9 ★</div>
+      <div class="float-sub">32 reviews</div>
+    </div>
+
+    <div class="float-card glass">
+      <div class="float-label">Years Active</div>
+      <div class="float-val">5+</div>
+      <div class="float-sub">2020 — Present</div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+  <!-- MARQUEE -->
+  
+  <div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="marquee-item">HTML5</span>
+    <span class="marquee-item">CSS3</span>
+    <span class="marquee-item">Bootstrap</span>
+    <span class="marquee-item">JavaScript</span>
+    <span class="marquee-item">Tailwind CSS</span>
+    <span class="marquee-item">React.js</span>
+    <span class="marquee-item">Next.js</span>
+    <span class="marquee-item">Vite</span>
+    <span class="marquee-item">React Native</span>
+    <span class="marquee-item">Responsive Design</span>
+    <span class="marquee-item">UI/UX Design</span>
+    <span class="marquee-item">Figma</span>
+    <span class="marquee-item">WordPress</span>
+    <span class="marquee-item">SEO Friendly UI</span>
+    <span class="marquee-item">Image Optimization</span>
+    <span class="marquee-item">GitHub</span>
+
+    <!-- Repeat for smooth infinite marquee -->
+    <span class="marquee-item">HTML5</span>
+    <span class="marquee-item">CSS3</span>
+    <span class="marquee-item">Bootstrap</span>
+    <span class="marquee-item">JavaScript</span>
+    <span class="marquee-item">Tailwind CSS</span>
+    <span class="marquee-item">React.js</span>
+    <span class="marquee-item">Next.js</span>
+    <span class="marquee-item">Vite</span>
+    <span class="marquee-item">React Native</span>
+    <span class="marquee-item">Responsive Design</span>
+    <span class="marquee-item">UI/UX Design</span>
+    <span class="marquee-item">Figma</span>
+    <span class="marquee-item">WordPress</span>
+    <span class="marquee-item">SEO Friendly UI</span>
+    <span class="marquee-item">Image Optimization</span>
+    <span class="marquee-item">GitHub</span>
+  </div>
+</div>
+
+
+  <!-- STATS -->
+  <section style="padding-top:80px">
+    <div class="section-label">Numbers that speak</div>
+    <h2 class="section-title">Experience in <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Numbers</span></h2>
+    <div class="stats-grid">
+      <div class="stat-card glass reveal"><div class="stat-num counter" data-target="50">0</div><div class="stat-label">Projects Completed</div></div>
+      <div class="stat-card glass reveal"><div class="stat-num counter" data-target="5">0</div><div class="stat-label">Years Experience</div></div>
+      <div class="stat-card glass reveal"><div class="stat-num counter" data-target="32">0</div><div class="stat-label">Happy Clients</div></div>
+      <div class="stat-card glass reveal"><div class="stat-num counter" data-target="5">0</div><div class="stat-label">Countries Served</div></div>
+    </div>
+  </section>
+
+  <!-- SKILLS HIGHLIGHTS -->
+  <section style="padding-top:60px;padding-bottom:60px">
+    <div class="section-label">What I use</div>
+    <h2 class="section-title">Core <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Skills</span></h2>
+    <div class="skills-row reveal">
+  <div class="skill-tag">
+    <span class="skill-tag-dot" style="background:#f16529"></span>
+    HTML5
+  </div>
+
+  <div class="skill-tag">
+    <span class="skill-tag-dot" style="background:#264de4"></span>
+    CSS3
+  </div>
+
+  <div class="skill-tag">
+    <span class="skill-tag-dot" style="background:#7952b3"></span>
+    Bootstrap
+  </div>
+
+  
+
+  <div class="skill-tag">
+    <span class="skill-tag-dot" style="background:#38bdf8"></span>
+    Tailwind CSS
+  </div>
+
+ 
+
+  <div class="skill-tag">
+    <span class="skill-tag-dot" style="background:#21759b"></span>
+    WordPress
+  </div>
+
+  <div class="skill-tag">
+    <span class="skill-tag-dot" style="background:#a259ff"></span>
+    Figma
+  </div>
+
+  
+
+
+
+  <div class="skill-tag">
+    <span class="skill-tag-dot" style="background:#2a5cff"></span>
+    Responsive Design
+  </div>
+
+  <div class="skill-tag">
+    <span class="skill-tag-dot" style="background:#7c3aed"></span>
+    UI/UX Design
+  </div>
+</div>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section style="padding-top:60px">
+    <div class="section-label">Selected work</div>
+    <h2 class="section-title">Featured <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Projects</span></h2>
+    <p class="section-sub">A curated selection of recent projects showcasing modern UI/UX and scalable frontend development.</p>
+    <div class="projects-grid" id="homeProjects"></div>
+    <div style="text-align:center;margin-top:40px">
+      <a class="btn btn-outline" href="projects.html">View All Projects <span class="btn-arrow">→</span></a>
+    </div>
+  </section>
+
+ <!-- TESTIMONIALS -->
+<section style="padding-top:60px">
+  <div class="section-label">Social proof</div>
+
+  <h2 class="section-title">
+    Work
+    <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent">
+      Highlights
+    </span>
+  </h2>
+
+  <div class="testimonials-grid">
+    <div class="testimonial-card glass reveal">
+      <div class="quote-mark">"</div>
+      <div class="stars">★★★★★</div>
+
+      <p class="testimonial-text">
+        Delivered clean, responsive website sections with proper spacing,
+        modern UI structure, and consistent design across mobile, tablet,
+        and desktop screens.
+      </p>
+
+      <div class="testimonial-author">
+        <div class="author-avatar">UI</div>
+        <div>
+          <div class="author-name">Responsive UI Work</div>
+          <div class="author-role">Frontend Web Design</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card glass reveal">
+      <div class="quote-mark">"</div>
+      <div class="stars">★★★★★</div>
+
+      <p class="testimonial-text">
+        Worked on product pages, landing pages, website updates, image
+        optimization, and SEO-friendly frontend structure for live business
+        websites.
+      </p>
+
+      <div class="testimonial-author">
+        <div class="author-avatar">SEO</div>
+        <div>
+          <div class="author-name">Website Optimization</div>
+          <div class="author-role">SEO-Friendly UI & Images</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card glass reveal">
+      <div class="quote-mark">"</div>
+      <div class="stars">★★★★★</div>
+
+      <p class="testimonial-text">
+        Prepared clean frontend files with organized HTML, CSS, JavaScript,
+        images, and responsive fixes ready for backend integration or client
+        delivery.
+      </p>
+
+      <div class="testimonial-author">
+        <div class="author-avatar">FE</div>
+        <div>
+          <div class="author-name">Frontend File Handoff</div>
+          <div class="author-role">Clean Code & Final Delivery</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- CTA BANNER -->
+  <div class="cta-banner reveal">
+    <div>
+      <div class="cta-title">Ready to build something<br>extraordinary?</div>
+      <p class="cta-sub">Let's create a premium digital experience together.</p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn btn-white" href="contact.html">Start a Project <span class="btn-arrow">→</span></a>
+      <a class="btn btn-ghost" href="about.html">View My Work</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER (shown on all pages via JS) -->
+<footer id="siteFooter">
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand"><a href="index.html"> <img src="images/jp-logo-footer.png" alt="JP Web"> </a></div>
+      <p class="footer-desc">Front-End Web Designer • Design • Develop • Deliver</p>
+      <div class="footer-socials" style="margin-top:24px">
+        <a href="#" class="social-icon">🐦</a>
+        <a href="#" class="social-icon">💼</a>
+        <a href="#" class="social-icon">🐙</a>
+        <a href="#" class="social-icon">📸</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Navigation</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">More</div>
+      <ul class="footer-links">
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Services</div>
+      <ul class="footer-links">
+        <li><a href="#">React Development</a></li>
+        <li><a href="#">UI/UX Design</a></li>
+        <li><a href="#">Performance</a></li>
+        <li><a href="#">Redesign</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Jaipal Shekhawat. All rights reserved.</span>
+    <span style="color:rgba(255,255,255,0.4)">Crafted with ❤️ and ☕</span>
+  </div>
+</footer>
+
+<script src="js/data.js" defer></script>
+<script src="js/projects.js" defer></script>
+<script src="js/skills.js" defer></script>
+<script src="js/theme.js" defer></script>
+<script src="js/menu.js" defer></script>
+<script src="js/faq.js" defer></script>
+<script src="js/form.js" defer></script>
+<script src="js/animations.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

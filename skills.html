@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Skills — Jaipal Shekhawat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+<div class="cursor">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+</div>
+
+<!-- SCROLL PROGRESS -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="services.html">Services</a>
+  <a href="skills.html">Skills</a>
+  <a href="case-studies.html">Case Studies</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-dot"><img src="images/jp-logo.png" alt="JP Web"></div>
+    
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="skills.html">Skills</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html" class="nav-cta">Contact</a>
+  </div>
+  <button class="nav-theme" onclick="toggleTheme()" title="Toggle theme">☀️</button>
+  <button class="hamburger" id="hamburger" onclick="toggleMobile()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ==================== SKILLS PAGE ==================== -->
+<div class="page" id="page-skills">
+  <section>
+    <div class="section-label">Technical expertise</div>
+
+    <h1 class="section-title">
+      Skills &
+      <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent">
+        Technologies
+      </span>
+    </h1>
+
+    <p class="section-sub">
+      5+ years of hands-on experience in front-end web design, responsive UI,
+      WordPress design, app UI design, SEO-friendly layouts, and website optimization.
+    </p>
+
+    <div class="skills-grid" id="skillsGrid"></div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="section-label">Tools & software</div>
+
+    <h2 class="section-title">
+      My
+      <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent">
+        Toolkit
+      </span>
+    </h2>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:16px;margin-top:40px">
+      <div class="glass" style="padding:20px;border-radius:var(--radius2);text-align:center;cursor:none;transition:transform 0.2s" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+        <div style="font-size:1.8rem">🎨</div>
+        <div style="font-size:0.8rem;font-weight:600;margin-top:8px;color:var(--ink)">Figma</div>
+      </div>
+
+      <div class="glass" style="padding:20px;border-radius:var(--radius2);text-align:center;cursor:none;transition:transform 0.2s" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+        <div style="font-size:1.8rem">🖼️</div>
+        <div style="font-size:0.8rem;font-weight:600;margin-top:8px;color:var(--ink)">Photoshop</div>
+      </div>
+
+      <div class="glass" style="padding:20px;border-radius:var(--radius2);text-align:center;cursor:none;transition:transform 0.2s" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+        <div style="font-size:1.8rem">✏️</div>
+        <div style="font-size:0.8rem;font-weight:600;margin-top:8px;color:var(--ink)">Canva</div>
+      </div>
+
+      <div class="glass" style="padding:20px;border-radius:var(--radius2);text-align:center;cursor:none;transition:transform 0.2s" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+        <div style="font-size:1.8rem">💻</div>
+        <div style="font-size:0.8rem;font-weight:600;margin-top:8px;color:var(--ink)">VS Code</div>
+      </div>
+
+      <div class="glass" style="padding:20px;border-radius:var(--radius2);text-align:center;cursor:none;transition:transform 0.2s" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+        <div style="font-size:1.8rem">🐙</div>
+        <div style="font-size:0.8rem;font-weight:600;margin-top:8px;color:var(--ink)">GitHub</div>
+      </div>
+
+      <div class="glass" style="padding:20px;border-radius:var(--radius2);text-align:center;cursor:none;transition:transform 0.2s" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+        <div style="font-size:1.8rem">🌐</div>
+        <div style="font-size:0.8rem;font-weight:600;margin-top:8px;color:var(--ink)">WordPress</div>
+      </div>
+
+      <div class="glass" style="padding:20px;border-radius:var(--radius2);text-align:center;cursor:none;transition:transform 0.2s" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+        <div style="font-size:1.8rem">🅱️</div>
+        <div style="font-size:0.8rem;font-weight:600;margin-top:8px;color:var(--ink)">Bootstrap</div>
+      </div>
+
+      <div class="glass" style="padding:20px;border-radius:var(--radius2);text-align:center;cursor:none;transition:transform 0.2s" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+        <div style="font-size:1.8rem">💨</div>
+        <div style="font-size:0.8rem;font-weight:600;margin-top:8px;color:var(--ink)">Tailwind</div>
+      </div>
+
+      <div class="glass" style="padding:20px;border-radius:var(--radius2);text-align:center;cursor:none;transition:transform 0.2s" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+        <div style="font-size:1.8rem">⚛️</div>
+        <div style="font-size:0.8rem;font-weight:600;margin-top:8px;color:var(--ink)">React.js</div>
+      </div>
+
+      <div class="glass" style="padding:20px;border-radius:var(--radius2);text-align:center;cursor:none;transition:transform 0.2s" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+        <div style="font-size:1.8rem">▲</div>
+        <div style="font-size:0.8rem;font-weight:600;margin-top:8px;color:var(--ink)">Next.js</div>
+      </div>
+
+      <div class="glass" style="padding:20px;border-radius:var(--radius2);text-align:center;cursor:none;transition:transform 0.2s" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+        <div style="font-size:1.8rem">⚙️</div>
+        <div style="font-size:0.8rem;font-weight:600;margin-top:8px;color:var(--ink)">Vite</div>
+      </div>
+
+      <div class="glass" style="padding:20px;border-radius:var(--radius2);text-align:center;cursor:none;transition:transform 0.2s" onmouseenter="this.style.transform='translateY(-4px)'" onmouseleave="this.style.transform='translateY(0)'">
+        <div style="font-size:1.8rem">📊</div>
+        <div style="font-size:0.8rem;font-weight:600;margin-top:8px;color:var(--ink)">Analytics</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER (shown on all pages via JS) -->
+<footer id="siteFooter">
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand"><a href="index.html"> <img src="images/jp-logo-footer.png" alt="JP Web"> </a></div>
+      <p class="footer-desc">Front-End Web Designer • Design • Develop • Deliver</p>
+      <div class="footer-socials" style="margin-top:24px">
+        <a href="#" class="social-icon">🐦</a>
+        <a href="#" class="social-icon">💼</a>
+        <a href="#" class="social-icon">🐙</a>
+        <a href="#" class="social-icon">📸</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Navigation</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">More</div>
+      <ul class="footer-links">
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Services</div>
+      <ul class="footer-links">
+        <li><a href="#">React Development</a></li>
+        <li><a href="#">UI/UX Design</a></li>
+        <li><a href="#">Performance</a></li>
+        <li><a href="#">Redesign</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Jaipal Shekhawat. All rights reserved.</span>
+    <span style="color:rgba(255,255,255,0.4)">Crafted with ❤️ and ☕</span>
+  </div>
+</footer>
+
+<script src="js/data.js" defer></script>
+<script src="js/projects.js" defer></script>
+<script src="js/skills.js" defer></script>
+<script src="js/theme.js" defer></script>
+<script src="js/menu.js" defer></script>
+<script src="js/faq.js" defer></script>
+<script src="js/form.js" defer></script>
+<script src="js/animations.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

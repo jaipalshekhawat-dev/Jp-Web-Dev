@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Projects — Jaipal Shekhawat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+</div>
+
+<!-- SCROLL PROGRESS -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="services.html">Services</a>
+  <a href="skills.html">Skills</a>
+  <a href="case-studies.html">Case Studies</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-dot"><img src="images/jp-logo.png" alt="JP Web"></div>
+    
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="skills.html">Skills</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html" class="nav-cta">Contact</a>
+  </div>
+  <button class="nav-theme" onclick="toggleTheme()" title="Toggle theme">☀️</button>
+  <button class="hamburger" id="hamburger" onclick="toggleMobile()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+
+<!-- ==================== PROJECTS PAGE ==================== -->
+<div class="page" id="page-projects">
+  <section>
+    <div class="section-label">Portfolio</div>
+
+    <h1 class="section-title">
+      Selected
+      <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent">
+        Projects
+      </span>
+    </h1>
+
+    <p class="section-sub">
+      Live websites I have worked on across corporate, e-commerce, portfolio,
+      blog, and landing page projects.
+    </p>
+
+    <div class="filter-row">
+      <button class="filter-btn active" onclick="filterProjects('all', this)">
+        All
+      </button>
+
+      <button class="filter-btn" onclick="filterProjects('business', this)">
+        Business
+      </button>
+
+      <button class="filter-btn" onclick="filterProjects('ecommerce', this)">
+        E-Commerce
+      </button>
+
+      <button class="filter-btn" onclick="filterProjects('landing', this)">
+        Landing Page
+      </button>
+
+      <button class="filter-btn" onclick="filterProjects('portfolio', this)">
+        Portfolio
+      </button>
+
+      <button class="filter-btn" onclick="filterProjects('blog', this)">
+        Blog
+      </button>
+    </div>
+
+    <div class="projects-grid" id="allProjects" style="margin-top:40px"></div>
+  </section>
+</div>
+
+<!-- FOOTER (shown on all pages via JS) -->
+<footer id="siteFooter">
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand"><a href="index.html"> <img src="images/jp-logo-footer.png" alt="JP Web"> </a></div>
+      <p class="footer-desc">Front-End Web Designer • Design • Develop • Deliver</p>
+      <div class="footer-socials" style="margin-top:24px">
+        <a href="#" class="social-icon">🐦</a>
+        <a href="#" class="social-icon">💼</a>
+        <a href="#" class="social-icon">🐙</a>
+        <a href="#" class="social-icon">📸</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Navigation</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">More</div>
+      <ul class="footer-links">
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Services</div>
+      <ul class="footer-links">
+        <li><a href="#">React Development</a></li>
+        <li><a href="#">UI/UX Design</a></li>
+        <li><a href="#">Performance</a></li>
+        <li><a href="#">Redesign</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Jaipal Shekhawat. All rights reserved.</span>
+    <span style="color:rgba(255,255,255,0.4)">Crafted with ❤️ and ☕</span>
+  </div>
+</footer>
+
+<script src="js/data.js" defer></script>
+<script src="js/projects.js" defer></script>
+<script src="js/skills.js" defer></script>
+<script src="js/theme.js" defer></script>
+<script src="js/menu.js" defer></script>
+<script src="js/faq.js" defer></script>
+<script src="js/form.js" defer></script>
+<script src="js/animations.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Blog — Jaipal Shekhawat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+<div class="cursor">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+</div>
+
+<!-- SCROLL PROGRESS -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="services.html">Services</a>
+  <a href="skills.html">Skills</a>
+  <a href="case-studies.html">Case Studies</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-dot"><img src="images/jp-logo.png" alt="JP Web"></div>
+    
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="skills.html">Skills</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html" class="nav-cta">Contact</a>
+  </div>
+  <button class="nav-theme" onclick="toggleTheme()" title="Toggle theme">☀️</button>
+  <button class="hamburger" id="hamburger" onclick="toggleMobile()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ==================== BLOG PAGE ==================== -->
+<div class="page" id="page-blog">
+  <section>
+    <div class="section-label">Thoughts & tutorials</div>
+
+    <h1 class="section-title">
+      From the
+      <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent">
+        Blog
+      </span>
+    </h1>
+
+    <p class="section-sub">
+      Practical notes, UI tips, frontend learning, responsive design ideas, and
+      website optimization insights from my work experience.
+    </p>
+
+    <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-top:24px">
+      <div class="search-bar">
+        <span style="color:var(--ink3)">🔍</span>
+        <input type="text" placeholder="Search articles...">
+      </div>
+
+      <div class="filter-row" style="margin-top:0">
+        <button class="filter-btn active" onclick="setActiveFilter(this)">All</button>
+        <button class="filter-btn" onclick="setActiveFilter(this)">UI/UX</button>
+        <button class="filter-btn" onclick="setActiveFilter(this)">Responsive</button>
+        <button class="filter-btn" onclick="setActiveFilter(this)">WordPress</button>
+        <button class="filter-btn" onclick="setActiveFilter(this)">SEO</button>
+      </div>
+    </div>
+
+    <!-- Featured -->
+    <div class="blog-card reveal" style="border-radius:var(--radius);border:1px solid var(--border);background:var(--surface);overflow:hidden;margin-top:40px;display:grid;grid-template-columns:1.4fr 1fr;min-height:320px">
+      <div class="blog-thumb blog-thumb-featured" style="height:100%;background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);font-size:5rem;position:relative">
+        <span class="blog-cat">Featured</span>
+        💻
+      </div>
+
+      <div style="padding:36px;display:flex;flex-direction:column;justify-content:center">
+        <div class="blog-meta">
+          <span class="blog-date">2026</span>
+          <span class="blog-read">5 min read</span>
+        </div>
+
+        <h2 style="font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:800;color:var(--ink);line-height:1.25">
+          How I Build Clean and Responsive Frontend Website Layouts
+        </h2>
+
+        <p class="blog-excerpt">
+          My practical process for planning sections, creating clean UI, writing
+          frontend code, testing responsiveness, and preparing files for handoff.
+        </p>
+
+        <a href="#" class="blog-read-more">Read Article →</a>
+      </div>
+    </div>
+
+    <div class="blog-grid" style="margin-top:32px">
+      <div class="blog-card reveal">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#1a0533,#6b21a8)">
+          <span class="blog-cat">UI/UX</span>
+          🎨
+        </div>
+
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="blog-date">2026</span>
+            <span class="blog-read">4 min</span>
+          </div>
+
+          <h3 class="blog-title">
+            Simple UI/UX Rules I Follow for Better Website Design
+          </h3>
+
+          <p class="blog-excerpt">
+            Clean spacing, readable typography, clear CTA buttons, section flow,
+            and user-friendly layout decisions.
+          </p>
+
+          <a href="#" class="blog-read-more">Read →</a>
+        </div>
+      </div>
+
+      <div class="blog-card reveal">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#052e16,#15803d)">
+          <span class="blog-cat">Responsive</span>
+          📱
+        </div>
+
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="blog-date">2026</span>
+            <span class="blog-read">5 min</span>
+          </div>
+
+          <h3 class="blog-title">
+            Responsive Design Checklist for Mobile, Tablet and Desktop
+          </h3>
+
+          <p class="blog-excerpt">
+            A practical checklist for fixing spacing, alignment, image size,
+            buttons, navigation, and layout breakpoints.
+          </p>
+
+          <a href="#" class="blog-read-more">Read →</a>
+        </div>
+      </div>
+
+      <div class="blog-card reveal">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#1c1917,#57534e)">
+          <span class="blog-cat">SEO</span>
+          🚀
+        </div>
+
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="blog-date">2026</span>
+            <span class="blog-read">4 min</span>
+          </div>
+
+          <h3 class="blog-title">
+            SEO-Friendly Frontend: Headings, Images and Page Structure
+          </h3>
+
+          <p class="blog-excerpt">
+            How clean heading order, alt text, optimized images, semantic HTML,
+            and fast loading improve website quality.
+          </p>
+
+          <a href="#" class="blog-read-more">Read →</a>
+        </div>
+      </div>
+
+      <div class="blog-card reveal">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#064e3b,#047857)">
+          <span class="blog-cat">WordPress</span>
+          🌐
+        </div>
+
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="blog-date">2026</span>
+            <span class="blog-read">4 min</span>
+          </div>
+
+          <h3 class="blog-title">
+            WordPress Design Tips for Clean and Modern Business Websites
+          </h3>
+
+          <p class="blog-excerpt">
+            Practical tips for creating better WordPress sections, landing pages,
+            product layouts, and responsive website pages.
+          </p>
+
+          <a href="#" class="blog-read-more">Read →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="newsletter reveal">
+      <div class="newsletter-title">📬 Stay in the Loop</div>
+
+      <p class="newsletter-sub">
+        Web design tips, frontend notes, UI/UX ideas, and website optimization
+        insights — delivered occasionally.
+      </p>
+
+      <div class="newsletter-form">
+        <input type="email" placeholder="your@email.com">
+        <button class="btn btn-primary" style="white-space:nowrap" onclick="alert('Subscribed! 🎉')">
+          Subscribe
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER (shown on all pages via JS) -->
+<footer id="siteFooter">
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand"><a href="index.html"> <img src="images/jp-logo-footer.png" alt="JP Web"> </a></div>
+      <p class="footer-desc">Front-End Web Designer • Design • Develop • Deliver</p>
+      <div class="footer-socials" style="margin-top:24px">
+        <a href="#" class="social-icon">🐦</a>
+        <a href="#" class="social-icon">💼</a>
+        <a href="#" class="social-icon">🐙</a>
+        <a href="#" class="social-icon">📸</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Navigation</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">More</div>
+      <ul class="footer-links">
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Services</div>
+      <ul class="footer-links">
+        <li><a href="#">React Development</a></li>
+        <li><a href="#">UI/UX Design</a></li>
+        <li><a href="#">Performance</a></li>
+        <li><a href="#">Redesign</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Jaipal Shekhawat. All rights reserved.</span>
+    <span style="color:rgba(255,255,255,0.4)">Crafted with ❤️ and ☕</span>
+  </div>
+</footer>
+
+<script src="js/data.js" defer></script>
+<script src="js/projects.js" defer></script>
+<script src="js/skills.js" defer></script>
+<script src="js/theme.js" defer></script>
+<script src="js/menu.js" defer></script>
+<script src="js/faq.js" defer></script>
+<script src="js/form.js" defer></script>
+<script src="js/animations.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
