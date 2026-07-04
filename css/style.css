@@ -933,19 +933,19 @@ footer {
   gap: 12px;
 }
 .social-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.8rem;
-  cursor: auto;
-  transition: all 0.2s;
-  color: white;
-  text-decoration: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgb(255 255 255);
+    border: 1px solid rgb(255 255 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    cursor: auto;
+    transition: all 0.2s;
+    /* color: white; */
+    text-decoration: none;
 }
 .social-icon:hover {
   background: var(--accent);
@@ -1368,6 +1368,10 @@ footer {
   font-size: 1.1rem;
   flex-shrink: 0;
 }
+
+.contact-item-icon i{color: #ffffff;}
+
+
 .contact-item-label {
   font-size: 0.78rem;
   color: var(--ink3);
