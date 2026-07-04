@@ -3,7 +3,7 @@ const projectsData = [
   {
     id: 1,
     cat: "business",
-    emoji: "💼",
+    img: "images/projects/firminiq.png",
     title: "Firminiq",
     desc: "Corporate & business consulting platform. Website design, development, SEO, speed optimization and ongoing maintenance.",
     stack: ["HTML", "CSS", "JavaScript", "SEO", "Speed Optimization"],
@@ -15,7 +15,7 @@ const projectsData = [
   {
     id: 2,
     cat: "business",
-    emoji: "🎯",
+    img: "images/projects/firminiq.png",
     title: "Quantic",
     desc: "AI-powered SEO and digital marketing platform with website development, SEO and content integration.",
     stack: ["Website Design", "SEO", "Content Integration"],
@@ -27,7 +27,7 @@ const projectsData = [
   {
     id: 3,
     cat: "blog",
-    emoji: "📰",
+    img: "images/projects/firminiq.png",
     title: "TechKopra",
     desc: "Tech blog and news platform with website design, development, SEO and content management.",
     stack: ["HTML", "CSS", "CMS", "SEO"],
@@ -39,7 +39,7 @@ const projectsData = [
   {
     id: 4,
     cat: "portfolio",
-    emoji: "📸",
+    img: "images/projects/firminiq.png",
     title: "Litpix Studio",
     desc: "Photography and creative studio website with portfolio integration, website design, development and SEO.",
     stack: ["Portfolio UI", "Website Design", "SEO"],
@@ -51,7 +51,7 @@ const projectsData = [
   {
     id: 5,
     cat: "ecommerce",
-    emoji: "🪑",
+    img: "images/projects/firminiq.png",
     title: "HCI Comfort Zone",
     desc: "Ergonomic chairs and office comfort e-commerce store with product integration and SEO.",
     stack: ["E-Commerce", "Product Integration", "SEO"],
@@ -63,7 +63,7 @@ const projectsData = [
   {
     id: 6,
     cat: "ecommerce",
-    emoji: "🛒",
+    img: "images/projects/firminiq.png",
     title: "Human Care Store",
     desc: "Healthcare products e-commerce store with product integration, payment gateway setup and SEO.",
     stack: ["E-Commerce", "Payment Gateway", "SEO"],
@@ -75,7 +75,7 @@ const projectsData = [
   {
     id: 7,
     cat: "ecommerce",
-    emoji: "🏷️",
+    img: "images/projects/firminiq.png",
     title: "Human Care Deals",
     desc: "Deals and offers platform for healthcare products with deal management system and SEO.",
     stack: ["Deals System", "Website Development", "SEO"],
@@ -87,7 +87,7 @@ const projectsData = [
   {
     id: 8,
     cat: "business",
-    emoji: "🥗",
+    img: "images/projects/firminiq.png",
     title: "Rotai",
     desc: "Healthy and authentic roti / food brand website with menu management and SEO.",
     stack: ["Website Design", "Menu Management", "SEO"],
@@ -99,7 +99,7 @@ const projectsData = [
   {
     id: 9,
     cat: "ecommerce",
-    emoji: "💺",
+    img: "images/projects/firminiq.png",
     title: "Fujiiryoki",
     desc: "Premium massage chairs and wellness solutions e-commerce website with product integration and SEO.",
     stack: ["E-Commerce", "Product Integration", "SEO"],
@@ -111,7 +111,7 @@ const projectsData = [
   {
     id: 10,
     cat: "business",
-    emoji: "🏢",
+    img: "images/projects/firminiq.png",
     title: "Human Care International",
     desc: "Main corporate website for Human Care Group with branding, content management and SEO.",
     stack: ["Corporate Website", "Branding", "SEO"],
@@ -123,7 +123,7 @@ const projectsData = [
   {
     id: 11,
     cat: "landing",
-    emoji: "🤝",
+    img: "images/projects/firminiq.png",
     title: "Human Care Franchise",
     desc: "Franchise opportunity platform with lead generation system, website development and SEO.",
     stack: ["Landing Page", "Lead Generation", "SEO"],
@@ -135,20 +135,20 @@ const projectsData = [
 ];
 
 const skillsData = [
-  { name: "HTML5", icon: "🌐", pct: 98 },
-  { name: "CSS3", icon: "🎨", pct: 96 },
-  { name: "Bootstrap", icon: "🅱️", pct: 95 },
-  { name: "JavaScript", icon: "⚡", pct: 88 },
-  { name: "Tailwind CSS", icon: "💨", pct: 82 },
-  { name: "React.js", icon: "⚛️", pct: 70 },
-  { name: "Next.js", icon: "▲", pct: 65 },
-  { name: "Vite", icon: "⚙️", pct: 70 },
-  { name: "React Native", icon: "📱", pct: 60 },
-  { name: "WordPress", icon: "📝", pct: 85 },
-  { name: "UI/UX Design", icon: "🖌️", pct: 88 },
-  { name: "Figma", icon: "🎯", pct: 82 },
-  { name: "Responsive Design", icon: "📐", pct: 96 },
-  { name: "SEO Friendly UI", icon: "🚀", pct: 90 },
-  { name: "Image Optimization", icon: "🖼️", pct: 92 },
-  { name: "GitHub", icon: "🔧", pct: 82 }
+  { name: "HTML5", icon: "language", pct: 98 },
+  { name: "CSS3", icon: "palette", pct: 96 },
+  { name: "Bootstrap", icon: "view_quilt", pct: 95 },
+  { name: "JavaScript", icon: "bolt", pct: 88 },
+  { name: "Tailwind CSS", icon: "speed", pct: 82 },
+  { name: "React.js", icon: "developer_mode", pct: 70 },
+  { name: "Next.js", icon: "change_history", pct: 65 },
+  { name: "Vite", icon: "settings", pct: 70 },
+  { name: "React Native", icon: "smartphone", pct: 60 },
+  { name: "WordPress", icon: "edit_note", pct: 85 },
+  { name: "UI/UX Design", icon: "brush", pct: 88 },
+  { name: "Figma", icon: "ads_click", pct: 82 },
+  { name: "Responsive Design", icon: "design_services", pct: 96 },
+  { name: "SEO Friendly UI", icon: "rocket_launch", pct: 90 },
+  { name: "Image Optimization", icon: "image", pct: 92 },
+  { name: "GitHub", icon: "construction", pct: 82 }
 ];

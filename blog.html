@@ -1,44 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>Blog — Jaipal Shekhawat</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+
+  <!-- PNG Favicons -->
+  <link href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+  <link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+  <!-- Apple iPhone -->
+  <link href="images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+  <!-- Android / PWA -->
+  <link href="images/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png" />
+  <link href="images/android-chrome-512x512.png" rel="icon" sizes="512x512" type="image/png" />
+
+
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&amp;display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
+
 <body>
 
+
   <!-- CURSOR -->
-<div class="cursor">
-  <div class="cursor-dot"></div>
-  <div class="cursor-ring"></div>
-</div>
+  <div class="cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
 
-<!-- SCROLL PROGRESS -->
-<div class="scroll-progress" id="scrollProgress"></div>
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress" id="scrollProgress"></div>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="projects.html">Projects</a>
-  <a href="services.html">Services</a>
-  <a href="skills.html">Skills</a>
-  <a href="case-studies.html">Case Studies</a>
-  <a href="blog.html">Blog</a>
-  <a href="contact.html">Contact</a>
-</div>
-
-<!-- NAV -->
-<nav id="mainNav">
-  <a class="nav-logo" href="index.html">
-    <div class="nav-logo-dot"><img src="images/jp-logo.png" alt="JP Web"></div>
-    
-  </a>
-  <div class="nav-links">
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="projects.html">Projects</a>
@@ -46,248 +50,361 @@
     <a href="skills.html">Skills</a>
     <a href="case-studies.html">Case Studies</a>
     <a href="blog.html">Blog</a>
-    <a href="contact.html" class="nav-cta">Contact</a>
+    <a href="contact.html">Contact</a>
   </div>
-  <button class="nav-theme" onclick="toggleTheme()" title="Toggle theme">☀️</button>
-  <button class="hamburger" id="hamburger" onclick="toggleMobile()">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
 
-<!-- ==================== BLOG PAGE ==================== -->
-<div class="page" id="page-blog">
-  <section>
-    <div class="section-label">Thoughts & tutorials</div>
+  <!-- NAV -->
+  <nav id="mainNav" class="site-nav">
+    <div class="container">
+      <div class="row align-items-center">
 
-    <h1 class="section-title">
-      From the
-      <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent">
-        Blog
-      </span>
-    </h1>
-
-    <p class="section-sub">
-      Practical notes, UI tips, frontend learning, responsive design ideas, and
-      website optimization insights from my work experience.
-    </p>
-
-    <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-top:24px">
-      <div class="search-bar">
-        <span style="color:var(--ink3)">🔍</span>
-        <input type="text" placeholder="Search articles...">
-      </div>
-
-      <div class="filter-row" style="margin-top:0">
-        <button class="filter-btn active" onclick="setActiveFilter(this)">All</button>
-        <button class="filter-btn" onclick="setActiveFilter(this)">UI/UX</button>
-        <button class="filter-btn" onclick="setActiveFilter(this)">Responsive</button>
-        <button class="filter-btn" onclick="setActiveFilter(this)">WordPress</button>
-        <button class="filter-btn" onclick="setActiveFilter(this)">SEO</button>
-      </div>
-    </div>
-
-    <!-- Featured -->
-    <div class="blog-card reveal" style="border-radius:var(--radius);border:1px solid var(--border);background:var(--surface);overflow:hidden;margin-top:40px;display:grid;grid-template-columns:1.4fr 1fr;min-height:320px">
-      <div class="blog-thumb blog-thumb-featured" style="height:100%;background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);font-size:5rem;position:relative">
-        <span class="blog-cat">Featured</span>
-        💻
-      </div>
-
-      <div style="padding:36px;display:flex;flex-direction:column;justify-content:center">
-        <div class="blog-meta">
-          <span class="blog-date">2026</span>
-          <span class="blog-read">5 min read</span>
+        <div class="col-auto">
+          <a class="nav-logo" href="index.html">
+            <div class="nav-logo-dot">
+              <img alt="JP Web" src="images/jp-logo.png" />
+            </div>
+          </a>
         </div>
 
-        <h2 style="font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:800;color:var(--ink);line-height:1.25">
-          How I Build Clean and Responsive Frontend Website Layouts
-        </h2>
-
-        <p class="blog-excerpt">
-          My practical process for planning sections, creating clean UI, writing
-          frontend code, testing responsiveness, and preparing files for handoff.
-        </p>
-
-        <a href="#" class="blog-read-more">Read Article →</a>
-      </div>
-    </div>
-
-    <div class="blog-grid" style="margin-top:32px">
-      <div class="blog-card reveal">
-        <div class="blog-thumb" style="background:linear-gradient(135deg,#1a0533,#6b21a8)">
-          <span class="blog-cat">UI/UX</span>
-          🎨
+        <div class="col d-none d-lg-flex justify-content-center">
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="services.html">Services</a>
+            <a href="skills.html">Skills</a>
+            <a href="case-studies.html">Case Studies</a>
+            <a href="blog.html">Blog</a>
+            <a class="nav-cta" href="contact.html">Contact</a>
+          </div>
         </div>
 
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="blog-date">2026</span>
-            <span class="blog-read">4 min</span>
+        <div class="col-auto ms-auto d-flex align-items-center gap-2">
+          <button class="nav-theme" onclick="toggleTheme()" title="Toggle theme">
+            <i class="material-symbols-outlined" aria-hidden="true">light_mode</i>
+          </button>
+
+          <button class="hamburger d-flex d-lg-none" id="hamburger" onclick="toggleMobile()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ==================== BLOG PAGE ==================== -->
+
+  <!-- BLOG PAGE START -->
+  <div class="page" id="page-blog">
+
+    <!-- BLOG HERO / LISTING SECTION START -->
+    <section class="section-pt section-pb">
+      <div class="container">
+
+        <!-- BLOG SECTION HEADING START -->
+        <div class="mb-5">
+          <div class="section-label">Thoughts &amp; tutorials</div>
+
+          <h1 class="section-title">
+            From the
+            <span class="text-gradient">Blog</span>
+          </h1>
+
+          <p class="section-sub">
+            Practical notes, UI tips, frontend learning, responsive design ideas, and
+            website optimization insights from my work experience.
+          </p>
+        </div>
+        <!-- BLOG SECTION HEADING END -->
+
+
+
+
+        <!-- FEATURED BLOG CARD START -->
+        <div class="blog-card reveal featured-blog-card mt-40">
+          <div class="row g-0">
+
+            <!-- FEATURED BLOG IMAGE COLUMN START -->
+            <div class="col-12 col-lg-7">
+              <div class="blog-thumb blog-thumb-featured blog-thumb-featured-blue h-100">
+                <span class="blog-cat">Featured</span>
+                <i class="material-symbols-outlined" aria-hidden="true">computer</i>
+              </div>
+            </div>
+            <!-- FEATURED BLOG IMAGE COLUMN END -->
+
+            <!-- FEATURED BLOG CONTENT COLUMN START -->
+            <div class="col-12 col-lg-5">
+              <div class="featured-blog-body">
+                <div class="blog-meta">
+                  <span class="blog-date">2026</span>
+                  <span class="blog-read">5 min read</span>
+                </div>
+
+                <h2 class="featured-blog-title">
+                  How I Build Clean and Responsive Frontend Website Layouts
+                </h2>
+
+                <p class="blog-excerpt">
+                  My practical process for planning sections, creating clean UI, writing
+                  frontend code, testing responsiveness, and preparing files for handoff.
+                </p>
+
+                <a class="blog-read-more" href="#">Read Article →</a>
+              </div>
+            </div>
+            <!-- FEATURED BLOG CONTENT COLUMN END -->
+
+          </div>
+        </div>
+        <!-- FEATURED BLOG CARD END -->
+
+
+        <!-- BLOG GRID START -->
+        <div class="blog-grid row g-4">
+
+          <!-- BLOG CARD 01 START -->
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="blog-card reveal">
+              <div class="blog-thumb blog-thumb-purple">
+                <span class="blog-cat">UI/UX</span>
+                <i class="material-symbols-outlined" aria-hidden="true">palette</i>
+              </div>
+
+              <div class="blog-body">
+                <div class="blog-meta">
+                  <span class="blog-date">2026</span>
+                  <span class="blog-read">4 min</span>
+                </div>
+
+                <h3 class="blog-title">
+                  Simple UI/UX Rules I Follow for Better Website Design
+                </h3>
+
+                <p class="blog-excerpt">
+                  Clean spacing, readable typography, clear CTA buttons, section flow,
+                  and user-friendly layout decisions.
+                </p>
+
+                <a class="blog-read-more" href="#">Read →</a>
+              </div>
+            </div>
+          </div>
+          <!-- BLOG CARD 01 END -->
+
+
+          <!-- BLOG CARD 02 START -->
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="blog-card reveal">
+              <div class="blog-thumb blog-thumb-green">
+                <span class="blog-cat">Responsive</span>
+                <i class="material-symbols-outlined" aria-hidden="true">smartphone</i>
+              </div>
+
+              <div class="blog-body">
+                <div class="blog-meta">
+                  <span class="blog-date">2026</span>
+                  <span class="blog-read">5 min</span>
+                </div>
+
+                <h3 class="blog-title">
+                  Responsive Design Checklist for Mobile, Tablet and Desktop
+                </h3>
+
+                <p class="blog-excerpt">
+                  A practical checklist for fixing spacing, alignment, image size,
+                  buttons, navigation, and layout breakpoints.
+                </p>
+
+                <a class="blog-read-more" href="#">Read →</a>
+              </div>
+            </div>
+          </div>
+          <!-- BLOG CARD 02 END -->
+
+
+          <!-- BLOG CARD 03 START -->
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="blog-card reveal">
+              <div class="blog-thumb blog-thumb-stone">
+                <span class="blog-cat">SEO</span>
+                <i class="material-symbols-outlined" aria-hidden="true">rocket_launch</i>
+              </div>
+
+              <div class="blog-body">
+                <div class="blog-meta">
+                  <span class="blog-date">2026</span>
+                  <span class="blog-read">4 min</span>
+                </div>
+
+                <h3 class="blog-title">
+                  SEO-Friendly Frontend: Headings, Images and Page Structure
+                </h3>
+
+                <p class="blog-excerpt">
+                  How clean heading order, alt text, optimized images, semantic HTML,
+                  and fast loading improve website quality.
+                </p>
+
+                <a class="blog-read-more" href="#">Read →</a>
+              </div>
+            </div>
+          </div>
+          <!-- BLOG CARD 03 END -->
+
+
+          <!-- BLOG CARD 04 START -->
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="blog-card reveal">
+              <div class="blog-thumb blog-thumb-emerald">
+                <span class="blog-cat">WordPress</span>
+                <i class="material-symbols-outlined" aria-hidden="true">language</i>
+              </div>
+
+              <div class="blog-body">
+                <div class="blog-meta">
+                  <span class="blog-date">2026</span>
+                  <span class="blog-read">4 min</span>
+                </div>
+
+                <h3 class="blog-title">
+                  WordPress Design Tips for Clean and Modern Business Websites
+                </h3>
+
+                <p class="blog-excerpt">
+                  Practical tips for creating better WordPress sections, landing pages,
+                  product layouts, and responsive website pages.
+                </p>
+
+                <a class="blog-read-more" href="#">Read →</a>
+              </div>
+            </div>
+          </div>
+          <!-- BLOG CARD 04 END -->
+
+        </div>
+        <!-- BLOG GRID END -->
+
+
+        <!-- NEWSLETTER SECTION START -->
+        <div class="newsletter reveal">
+
+          <div class="newsletter-title">
+            <i class="material-symbols-outlined" aria-hidden="true">mark_email_read</i>
+            Stay in the Loop
           </div>
 
-          <h3 class="blog-title">
-            Simple UI/UX Rules I Follow for Better Website Design
-          </h3>
-
-          <p class="blog-excerpt">
-            Clean spacing, readable typography, clear CTA buttons, section flow,
-            and user-friendly layout decisions.
+          <p class="newsletter-sub">
+            Web design tips, frontend notes, UI/UX ideas, and website optimization
+            insights — delivered occasionally.
           </p>
 
-          <a href="#" class="blog-read-more">Read →</a>
-        </div>
-      </div>
+          <!-- NEWSLETTER FORM START -->
+          <div class="newsletter-form">
+            <input placeholder="your@email.com" type="email" />
 
-      <div class="blog-card reveal">
-        <div class="blog-thumb" style="background:linear-gradient(135deg,#052e16,#15803d)">
-          <span class="blog-cat">Responsive</span>
-          📱
-        </div>
-
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="blog-date">2026</span>
-            <span class="blog-read">5 min</span>
+            <button class="btn btn-primary white-space-nowrap" onclick="alert('Subscribed! 🎉')">
+              Subscribe
+            </button>
           </div>
+          <!-- NEWSLETTER FORM END -->
 
-          <h3 class="blog-title">
-            Responsive Design Checklist for Mobile, Tablet and Desktop
-          </h3>
-
-          <p class="blog-excerpt">
-            A practical checklist for fixing spacing, alignment, image size,
-            buttons, navigation, and layout breakpoints.
-          </p>
-
-          <a href="#" class="blog-read-more">Read →</a>
         </div>
+        <!-- NEWSLETTER SECTION END -->
+
       </div>
+    </section>
+    <!-- BLOG HERO / LISTING SECTION END -->
 
-      <div class="blog-card reveal">
-        <div class="blog-thumb" style="background:linear-gradient(135deg,#1c1917,#57534e)">
-          <span class="blog-cat">SEO</span>
-          🚀
-        </div>
-
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="blog-date">2026</span>
-            <span class="blog-read">4 min</span>
-          </div>
-
-          <h3 class="blog-title">
-            SEO-Friendly Frontend: Headings, Images and Page Structure
-          </h3>
-
-          <p class="blog-excerpt">
-            How clean heading order, alt text, optimized images, semantic HTML,
-            and fast loading improve website quality.
-          </p>
-
-          <a href="#" class="blog-read-more">Read →</a>
-        </div>
-      </div>
-
-      <div class="blog-card reveal">
-        <div class="blog-thumb" style="background:linear-gradient(135deg,#064e3b,#047857)">
-          <span class="blog-cat">WordPress</span>
-          🌐
-        </div>
-
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="blog-date">2026</span>
-            <span class="blog-read">4 min</span>
-          </div>
-
-          <h3 class="blog-title">
-            WordPress Design Tips for Clean and Modern Business Websites
-          </h3>
-
-          <p class="blog-excerpt">
-            Practical tips for creating better WordPress sections, landing pages,
-            product layouts, and responsive website pages.
-          </p>
-
-          <a href="#" class="blog-read-more">Read →</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Newsletter -->
-    <div class="newsletter reveal">
-      <div class="newsletter-title">📬 Stay in the Loop</div>
-
-      <p class="newsletter-sub">
-        Web design tips, frontend notes, UI/UX ideas, and website optimization
-        insights — delivered occasionally.
-      </p>
-
-      <div class="newsletter-form">
-        <input type="email" placeholder="your@email.com">
-        <button class="btn btn-primary" style="white-space:nowrap" onclick="alert('Subscribed! 🎉')">
-          Subscribe
-        </button>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- FOOTER (shown on all pages via JS) -->
-<footer id="siteFooter">
-  <div class="footer-top">
-    <div>
-      <div class="footer-brand"><a href="index.html"> <img src="images/jp-logo-footer.png" alt="JP Web"> </a></div>
-      <p class="footer-desc">Front-End Web Designer • Design • Develop • Deliver</p>
-      <div class="footer-socials" style="margin-top:24px">
-        <a href="#" class="social-icon">🐦</a>
-        <a href="#" class="social-icon">💼</a>
-        <a href="#" class="social-icon">🐙</a>
-        <a href="#" class="social-icon">📸</a>
-      </div>
-    </div>
-    <div>
-      <div class="footer-col-title">Navigation</div>
-      <ul class="footer-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="services.html">Services</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">More</div>
-      <ul class="footer-links">
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="case-studies.html">Case Studies</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Services</div>
-      <ul class="footer-links">
-        <li><a href="#">React Development</a></li>
-        <li><a href="#">UI/UX Design</a></li>
-        <li><a href="#">Performance</a></li>
-        <li><a href="#">Redesign</a></li>
-      </ul>
-    </div>
   </div>
-  <div class="footer-bottom">
-    <span>© 2026 Jaipal Shekhawat. All rights reserved.</span>
-    <span style="color:rgba(255,255,255,0.4)">Crafted with ❤️ and ☕</span>
-  </div>
-</footer>
+  <!-- BLOG PAGE END -->
 
-<script src="js/data.js" defer></script>
-<script src="js/projects.js" defer></script>
-<script src="js/skills.js" defer></script>
-<script src="js/theme.js" defer></script>
-<script src="js/menu.js" defer></script>
-<script src="js/faq.js" defer></script>
-<script src="js/form.js" defer></script>
-<script src="js/animations.js" defer></script>
-<script src="js/main.js" defer></script>
+  <!-- FOOTER (shown on all pages via JS) -->
+  <footer id="siteFooter">
+
+    <div class="container">
+      <div class="footer-top row">
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="footer-brand"><a href="index.html"> <img alt="JP Web" src="images/jp-logo-footer.png" /> </a>
+          </div>
+          <p class="footer-desc">Front-End Web Designer • Design • Develop • Deliver</p>
+          <div class="footer-socials mt-24">
+            <a class="social-icon" href="#">
+              <i class="material-symbols-outlined" aria-hidden="true">share</i>
+            </a>
+            <a class="social-icon" href="#">
+              <i class="material-symbols-outlined" aria-hidden="true">business_center</i>
+            </a>
+            <a class="social-icon" href="#">
+              <i class="material-symbols-outlined" aria-hidden="true">code</i>
+            </a>
+            <a class="social-icon" href="#">
+              <i class="material-symbols-outlined" aria-hidden="true">photo_camera</i>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="footer-col-title">More</div>
+          <ul class="footer-links">
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links">
+            <li><a href="#">React Development</a></li>
+            <li><a href="#">UI/UX Design</a></li>
+            <li><a href="#">Performance</a></li>
+            <li><a href="#">Redesign</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center ">
+
+          <div class="col-12 col-md-6 text-center text-md-start">
+            <span>© 2026 Jaipal Shekhawat. All rights reserved.</span>
+          </div>
+
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <span class="footer-muted">Crafted with ❤️ and ☕</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script defer="True" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer="" src="js/data.js"></script>
+  <script defer="" src="js/projects.js"></script>
+  <script defer="" src="js/skills.js"></script>
+  <script defer="" src="js/theme.js"></script>
+  <script defer="" src="js/menu.js"></script>
+  <script defer="" src="js/faq.js"></script>
+  <script defer="" src="js/form.js"></script>
+  <script defer="" src="js/animations.js"></script>
+  <script defer="" src="js/main.js"></script>
 </body>
+
 </html>

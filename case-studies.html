@@ -1,44 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>Case Studies — Jaipal Shekhawat</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+
+
+  <!-- PNG Favicons -->
+  <link href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+  <link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+  <!-- Apple iPhone -->
+  <link href="images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+  <!-- Android / PWA -->
+  <link href="images/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png" />
+  <link href="images/android-chrome-512x512.png" rel="icon" sizes="512x512" type="image/png" />
+
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&amp;display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
+
 <body>
 
+
   <!-- CURSOR -->
-<div class="cursor">
-  <div class="cursor-dot"></div>
-  <div class="cursor-ring"></div>
-</div>
+  <div class="cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
 
-<!-- SCROLL PROGRESS -->
-<div class="scroll-progress" id="scrollProgress"></div>
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress" id="scrollProgress"></div>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="projects.html">Projects</a>
-  <a href="services.html">Services</a>
-  <a href="skills.html">Skills</a>
-  <a href="case-studies.html">Case Studies</a>
-  <a href="blog.html">Blog</a>
-  <a href="contact.html">Contact</a>
-</div>
-
-<!-- NAV -->
-<nav id="mainNav">
-  <a class="nav-logo" href="index.html">
-    <div class="nav-logo-dot"><img src="images/jp-logo.png" alt="JP Web"></div>
-    
-  </a>
-  <div class="nav-links">
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="projects.html">Projects</a>
@@ -46,316 +50,435 @@
     <a href="skills.html">Skills</a>
     <a href="case-studies.html">Case Studies</a>
     <a href="blog.html">Blog</a>
-    <a href="contact.html" class="nav-cta">Contact</a>
+    <a href="contact.html">Contact</a>
   </div>
-  <button class="nav-theme" onclick="toggleTheme()" title="Toggle theme">☀️</button>
-  <button class="hamburger" id="hamburger" onclick="toggleMobile()">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
 
-<!-- ==================== CASE STUDIES PAGE ==================== -->
-<div class="page" id="page-case-studies">
-  <section>
-    <div class="section-label">Deep dives</div>
+  <!-- NAV -->
+  <nav id="mainNav" class="site-nav">
+    <div class="container">
+      <div class="row align-items-center">
 
-    <h1 class="section-title">
-      Case
-      <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent">
-        Studies
-      </span>
-    </h1>
-
-    <p class="section-sub">
-      A quick look at real websites I have worked on — from UI design to responsive
-      frontend, SEO-friendly structure, and file handoff.
-    </p>
-
-    <div class="case-grid">
-      <div class="case-card reveal">
-        <div class="case-header" style="background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb)">
-          <div class="case-meta">
-            <div class="case-tag">Corporate Website</div>
-            <div class="case-title-big">Human Care International</div>
-          </div>
-        </div>
-
-        <div class="case-body">
-          <p style="font-size:0.875rem;color:var(--ink2);line-height:1.6">
-            Worked on the main corporate website for Human Care Group with responsive
-            UI sections, product pages, content updates, SEO-friendly layout, and
-            image optimization.
-          </p>
-
-          <div class="case-metrics">
-            <div class="case-metric">
-              <div class="case-metric-val">UI</div>
-              <div class="case-metric-label">Design</div>
+        <div class="col-auto">
+          <a class="nav-logo" href="index.html">
+            <div class="nav-logo-dot">
+              <img alt="JP Web" src="images/jp-logo.png" />
             </div>
-
-            <div class="case-metric">
-              <div class="case-metric-val">SEO</div>
-              <div class="case-metric-label">Structure</div>
-            </div>
-
-            <div class="case-metric">
-              <div class="case-metric-val">WebP</div>
-              <div class="case-metric-label">Images</div>
-            </div>
-          </div>
-
-          <a href="https://humancarei.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width:100%;text-align:center;margin-top:20px;justify-content:center">
-            View Live Website →
           </a>
         </div>
-      </div>
 
-      <div class="case-card reveal">
-        <div class="case-header" style="background:linear-gradient(135deg,#052e16,#166534,#15803d)">
-          <div class="case-meta">
-            <div class="case-tag">Landing Page</div>
-            <div class="case-title-big">Human Care Franchise</div>
+        <div class="col d-none d-lg-flex justify-content-center">
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="services.html">Services</a>
+            <a href="skills.html">Skills</a>
+            <a href="case-studies.html">Case Studies</a>
+            <a href="blog.html">Blog</a>
+            <a class="nav-cta" href="contact.html">Contact</a>
           </div>
         </div>
 
-        <div class="case-body">
-          <p style="font-size:0.875rem;color:var(--ink2);line-height:1.6">
-            Created a franchise landing page with modern UI, responsive sections,
-            product showcase, lead-generation form, clean frontend files, and
-            SEO-friendly page structure.
-          </p>
+        <div class="col-auto ms-auto d-flex align-items-center gap-2">
+          <button class="nav-theme" onclick="toggleTheme()" title="Toggle theme">
+            <i class="material-symbols-outlined" aria-hidden="true">light_mode</i>
+          </button>
 
-          <div class="case-metrics">
-            <div class="case-metric">
-              <div class="case-metric-val">Lead</div>
-              <div class="case-metric-label">Form</div>
-            </div>
-
-            <div class="case-metric">
-              <div class="case-metric-val">100%</div>
-              <div class="case-metric-label">Responsive</div>
-            </div>
-
-            <div class="case-metric">
-              <div class="case-metric-val">Clean</div>
-              <div class="case-metric-label">Files</div>
-            </div>
-          </div>
-
-          <a href="https://franchise.humancarei.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width:100%;text-align:center;margin-top:20px;justify-content:center">
-            View Live Website →
-          </a>
-        </div>
-      </div>
-
-      <div class="case-card reveal">
-        <div class="case-header" style="background:linear-gradient(135deg,#1a0533,#3d0f72,#6b21a8)">
-          <div class="case-meta">
-            <div class="case-tag">E-Commerce Website</div>
-            <div class="case-title-big">Fujiiryoki</div>
-          </div>
+          <button class="hamburger d-flex d-lg-none" id="hamburger" onclick="toggleMobile()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
 
-        <div class="case-body">
-          <p style="font-size:0.875rem;color:var(--ink2);line-height:1.6">
-            Worked on a premium wellness and massage chair e-commerce website with
-            product detail UI, responsive layout, product integration support,
-            and SEO-friendly frontend structure.
-          </p>
-
-          <div class="case-metrics">
-            <div class="case-metric">
-              <div class="case-metric-val">PDP</div>
-              <div class="case-metric-label">UI</div>
-            </div>
-
-            <div class="case-metric">
-              <div class="case-metric-val">E-Com</div>
-              <div class="case-metric-label">Layout</div>
-            </div>
-
-            <div class="case-metric">
-              <div class="case-metric-val">SEO</div>
-              <div class="case-metric-label">Ready</div>
-            </div>
-          </div>
-
-          <a href="https://fujiiryoki.co.in/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width:100%;text-align:center;margin-top:20px;justify-content:center">
-            View Live Website →
-          </a>
-        </div>
-      </div>
-
-      <div class="case-card reveal">
-        <div class="case-header" style="background:linear-gradient(135deg,#064e3b,#047857,#10b981)">
-          <div class="case-meta">
-            <div class="case-tag">Food Brand Website</div>
-            <div class="case-title-big">Rotai</div>
-          </div>
-        </div>
-
-        <div class="case-body">
-          <p style="font-size:0.875rem;color:var(--ink2);line-height:1.6">
-            Worked on a healthy food brand website with clean sections, menu-style
-            content structure, responsive UI, frontend styling, and SEO-focused
-            page layout.
-          </p>
-
-          <div class="case-metrics">
-            <div class="case-metric">
-              <div class="case-metric-val">Food</div>
-              <div class="case-metric-label">Brand</div>
-            </div>
-
-            <div class="case-metric">
-              <div class="case-metric-val">Menu</div>
-              <div class="case-metric-label">Content</div>
-            </div>
-
-            <div class="case-metric">
-              <div class="case-metric-val">UI</div>
-              <div class="case-metric-label">Design</div>
-            </div>
-          </div>
-
-          <a href="https://rotai.in/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width:100%;text-align:center;margin-top:20px;justify-content:center">
-            View Live Website →
-          </a>
-        </div>
-      </div>
-
-      <div class="case-card reveal">
-        <div class="case-header" style="background:linear-gradient(135deg,#831843,#be185d,#ec4899)">
-          <div class="case-meta">
-            <div class="case-tag">Creative Portfolio</div>
-            <div class="case-title-big">Litpix Studio</div>
-          </div>
-        </div>
-
-        <div class="case-body">
-          <p style="font-size:0.875rem;color:var(--ink2);line-height:1.6">
-            Worked on a photography and creative studio website with portfolio
-            sections, image-focused layout, responsive UI, and frontend page updates.
-          </p>
-
-          <div class="case-metrics">
-            <div class="case-metric">
-              <div class="case-metric-val">Photo</div>
-              <div class="case-metric-label">Portfolio</div>
-            </div>
-
-            <div class="case-metric">
-              <div class="case-metric-val">Image</div>
-              <div class="case-metric-label">Layout</div>
-            </div>
-
-            <div class="case-metric">
-              <div class="case-metric-val">UI</div>
-              <div class="case-metric-label">Sections</div>
-            </div>
-          </div>
-
-          <a href="https://litpixstudio.in/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width:100%;text-align:center;margin-top:20px;justify-content:center">
-            View Live Website →
-          </a>
-        </div>
-      </div>
-
-      <div class="case-card reveal">
-        <div class="case-header" style="background:linear-gradient(135deg,#0c4a6e,#0369a1,#38bdf8)">
-          <div class="case-meta">
-            <div class="case-tag">Blog Website</div>
-            <div class="case-title-big">TechKopra</div>
-          </div>
-        </div>
-
-        <div class="case-body">
-          <p style="font-size:0.875rem;color:var(--ink2);line-height:1.6">
-            Worked on a tech blog and news platform with article layout, content
-            structure, responsive sections, SEO-friendly UI, and frontend updates.
-          </p>
-
-          <div class="case-metrics">
-            <div class="case-metric">
-              <div class="case-metric-val">Blog</div>
-              <div class="case-metric-label">Layout</div>
-            </div>
-
-            <div class="case-metric">
-              <div class="case-metric-val">CMS</div>
-              <div class="case-metric-label">Content</div>
-            </div>
-
-            <div class="case-metric">
-              <div class="case-metric-val">SEO</div>
-              <div class="case-metric-label">Pages</div>
-            </div>
-          </div>
-
-          <a href="https://techkopra.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width:100%;text-align:center;margin-top:20px;justify-content:center">
-            View Live Website →
-          </a>
-        </div>
       </div>
     </div>
-  </section>
-</div>
+  </nav>
 
-<!-- FOOTER (shown on all pages via JS) -->
-<footer id="siteFooter">
-  <div class="footer-top">
-    <div>
-      <div class="footer-brand"><a href="index.html"> <img src="images/jp-logo-footer.png" alt="JP Web"> </a></div>
-      <p class="footer-desc">Front-End Web Designer • Design • Develop • Deliver</p>
-      <div class="footer-socials" style="margin-top:24px">
-        <a href="#" class="social-icon">🐦</a>
-        <a href="#" class="social-icon">💼</a>
-        <a href="#" class="social-icon">🐙</a>
-        <a href="#" class="social-icon">📸</a>
+
+  <!-- ==================== CASE STUDIES PAGE ==================== -->
+
+  <!-- CASE STUDIES PAGE START -->
+  <div class="page" id="page-case-studies">
+
+    <!-- CASE STUDIES SECTION START -->
+    <section class="section-pt section-pb">
+      <div class="container">
+
+        <!-- CASE STUDIES SECTION HEADING START -->
+        <div class="mb-5">
+          <div class="section-label">Deep dives</div>
+
+          <h1 class="section-title">
+            Case
+            <span class="text-gradient">Studies</span>
+          </h1>
+
+          <p class="section-sub">
+            A quick look at real websites I have worked on — from UI design to responsive
+            frontend, SEO-friendly structure, and file handoff.
+          </p>
+        </div>
+        <!-- CASE STUDIES SECTION HEADING END -->
+
+
+        <!-- CASE STUDIES GRID START -->
+        <div class=" row g-4 ">
+
+          <!-- CASE STUDY CARD 01 START -->
+          <div class="col-12 col-md-6">
+            <div class="case-card reveal">
+              <div class="case-header case-header-blue">
+                <div class="case-meta">
+                  <div class="case-tag">Corporate Website</div>
+                  <div class="case-title-big">Human Care International</div>
+                </div>
+              </div>
+
+              <div class="case-body">
+                <p class="case-description">
+                  Worked on the main corporate website for Human Care Group with responsive
+                  UI sections, product pages, content updates, SEO-friendly layout, and
+                  image optimization.
+                </p>
+
+                <div class="case-metrics">
+                  <div class="case-metric">
+                    <div class="case-metric-val">UI</div>
+                    <div class="case-metric-label">Design</div>
+                  </div>
+
+                  <div class="case-metric">
+                    <div class="case-metric-val">SEO</div>
+                    <div class="case-metric-label">Structure</div>
+                  </div>
+
+                  <div class="case-metric">
+                    <div class="case-metric-val">WebP</div>
+                    <div class="case-metric-label">Images</div>
+                  </div>
+                </div>
+
+                <a class="btn btn-outline btn-full-center" href="https://humancarei.com/" rel="noopener noreferrer"
+                  target="_blank">
+                  View Live Website →
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- CASE STUDY CARD 01 END -->
+
+
+          <!-- CASE STUDY CARD 02 START -->
+          <div class="col-12 col-md-6">
+            <div class="case-card reveal">
+              <div class="case-header case-header-green">
+                <div class="case-meta">
+                  <div class="case-tag">Landing Page</div>
+                  <div class="case-title-big">Human Care Franchise</div>
+                </div>
+              </div>
+
+              <div class="case-body">
+                <p class="case-description">
+                  Created a franchise landing page with modern UI, responsive sections,
+                  product showcase, lead-generation form, clean frontend files, and
+                  SEO-friendly page structure.
+                </p>
+
+                <div class="case-metrics">
+                  <div class="case-metric">
+                    <div class="case-metric-val">Lead</div>
+                    <div class="case-metric-label">Form</div>
+                  </div>
+
+                  <div class="case-metric">
+                    <div class="case-metric-val">100%</div>
+                    <div class="case-metric-label">Responsive</div>
+                  </div>
+
+                  <div class="case-metric">
+                    <div class="case-metric-val">Clean</div>
+                    <div class="case-metric-label">Files</div>
+                  </div>
+                </div>
+
+                <a class="btn btn-outline btn-full-center" href="https://franchise.humancarei.com/"
+                  rel="noopener noreferrer" target="_blank">
+                  View Live Website →
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- CASE STUDY CARD 02 END -->
+
+
+          <!-- CASE STUDY CARD 03 START -->
+          <div class="col-12 col-md-6">
+            <div class="case-card reveal">
+              <div class="case-header case-header-purple">
+                <div class="case-meta">
+                  <div class="case-tag">E-Commerce Website</div>
+                  <div class="case-title-big">Fujiiryoki</div>
+                </div>
+              </div>
+
+              <div class="case-body">
+                <p class="case-description">
+                  Worked on a premium wellness and massage chair e-commerce website with
+                  product detail UI, responsive layout, product integration support,
+                  and SEO-friendly frontend structure.
+                </p>
+
+                <div class="case-metrics">
+                  <div class="case-metric">
+                    <div class="case-metric-val">PDP</div>
+                    <div class="case-metric-label">UI</div>
+                  </div>
+
+                  <div class="case-metric">
+                    <div class="case-metric-val">E-Com</div>
+                    <div class="case-metric-label">Layout</div>
+                  </div>
+
+                  <div class="case-metric">
+                    <div class="case-metric-val">SEO</div>
+                    <div class="case-metric-label">Ready</div>
+                  </div>
+                </div>
+
+                <a class="btn btn-outline btn-full-center" href="https://fujiiryoki.co.in/" rel="noopener noreferrer"
+                  target="_blank">
+                  View Live Website →
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- CASE STUDY CARD 03 END -->
+
+
+          <!-- CASE STUDY CARD 04 START -->
+          <div class="col-12 col-md-6">
+            <div class="case-card reveal">
+              <div class="case-header case-header-emerald">
+                <div class="case-meta">
+                  <div class="case-tag">Food Brand Website</div>
+                  <div class="case-title-big">Rotai</div>
+                </div>
+              </div>
+
+              <div class="case-body">
+                <p class="case-description">
+                  Worked on a healthy food brand website with clean sections, menu-style
+                  content structure, responsive UI, frontend styling, and SEO-focused
+                  page layout.
+                </p>
+
+                <div class="case-metrics">
+                  <div class="case-metric">
+                    <div class="case-metric-val">Food</div>
+                    <div class="case-metric-label">Brand</div>
+                  </div>
+
+                  <div class="case-metric">
+                    <div class="case-metric-val">Menu</div>
+                    <div class="case-metric-label">Content</div>
+                  </div>
+
+                  <div class="case-metric">
+                    <div class="case-metric-val">UI</div>
+                    <div class="case-metric-label">Design</div>
+                  </div>
+                </div>
+
+                <a class="btn btn-outline btn-full-center" href="https://rotai.in/" rel="noopener noreferrer"
+                  target="_blank">
+                  View Live Website →
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- CASE STUDY CARD 04 END -->
+
+
+          <!-- CASE STUDY CARD 05 START -->
+          <div class="col-12 col-md-6">
+            <div class="case-card reveal">
+              <div class="case-header case-header-pink">
+                <div class="case-meta">
+                  <div class="case-tag">Creative Portfolio</div>
+                  <div class="case-title-big">Litpix Studio</div>
+                </div>
+              </div>
+
+              <div class="case-body">
+                <p class="case-description">
+                  Worked on a photography and creative studio website with portfolio
+                  sections, image-focused layout, responsive UI, and frontend page updates.
+                </p>
+
+                <div class="case-metrics">
+                  <div class="case-metric">
+                    <div class="case-metric-val">Photo</div>
+                    <div class="case-metric-label">Portfolio</div>
+                  </div>
+
+                  <div class="case-metric">
+                    <div class="case-metric-val">Image</div>
+                    <div class="case-metric-label">Layout</div>
+                  </div>
+
+                  <div class="case-metric">
+                    <div class="case-metric-val">UI</div>
+                    <div class="case-metric-label">Sections</div>
+                  </div>
+                </div>
+
+                <a class="btn btn-outline btn-full-center" href="https://litpixstudio.in/" rel="noopener noreferrer"
+                  target="_blank">
+                  View Live Website →
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- CASE STUDY CARD 05 END -->
+
+
+          <!-- CASE STUDY CARD 06 START -->
+          <div class="col-12 col-md-6">
+            <div class="case-card reveal">
+              <div class="case-header case-header-sky">
+                <div class="case-meta">
+                  <div class="case-tag">Blog Website</div>
+                  <div class="case-title-big">TechKopra</div>
+                </div>
+              </div>
+
+              <div class="case-body">
+                <p class="case-description">
+                  Worked on a tech blog and news platform with article layout, content
+                  structure, responsive sections, SEO-friendly UI, and frontend updates.
+                </p>
+
+                <div class="case-metrics">
+                  <div class="case-metric">
+                    <div class="case-metric-val">Blog</div>
+                    <div class="case-metric-label">Layout</div>
+                  </div>
+
+                  <div class="case-metric">
+                    <div class="case-metric-val">CMS</div>
+                    <div class="case-metric-label">Content</div>
+                  </div>
+
+                  <div class="case-metric">
+                    <div class="case-metric-val">SEO</div>
+                    <div class="case-metric-label">Pages</div>
+                  </div>
+                </div>
+
+                <a class="btn btn-outline btn-full-center" href="https://techkopra.com/" rel="noopener noreferrer"
+                  target="_blank">
+                  View Live Website →
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- CASE STUDY CARD 06 END -->
+
+        </div>
+        <!-- CASE STUDIES GRID END -->
+
       </div>
-    </div>
-    <div>
-      <div class="footer-col-title">Navigation</div>
-      <ul class="footer-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="services.html">Services</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">More</div>
-      <ul class="footer-links">
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="case-studies.html">Case Studies</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Services</div>
-      <ul class="footer-links">
-        <li><a href="#">React Development</a></li>
-        <li><a href="#">UI/UX Design</a></li>
-        <li><a href="#">Performance</a></li>
-        <li><a href="#">Redesign</a></li>
-      </ul>
-    </div>
+    </section>
+    <!-- CASE STUDIES SECTION END -->
+
   </div>
-  <div class="footer-bottom">
-    <span>© 2026 Jaipal Shekhawat. All rights reserved.</span>
-    <span style="color:rgba(255,255,255,0.4)">Crafted with ❤️ and ☕</span>
-  </div>
-</footer>
+  <!-- CASE STUDIES PAGE END -->
 
-<script src="js/data.js" defer></script>
-<script src="js/projects.js" defer></script>
-<script src="js/skills.js" defer></script>
-<script src="js/theme.js" defer></script>
-<script src="js/menu.js" defer></script>
-<script src="js/faq.js" defer></script>
-<script src="js/form.js" defer></script>
-<script src="js/animations.js" defer></script>
-<script src="js/main.js" defer></script>
+
+  <!-- FOOTER (shown on all pages via JS) -->
+  <footer id="siteFooter">
+
+    <div class="container">
+      <div class="footer-top row">
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="footer-brand"><a href="index.html"> <img alt="JP Web" src="images/jp-logo-footer.png" /> </a>
+          </div>
+          <p class="footer-desc">Front-End Web Designer • Design • Develop • Deliver</p>
+          <div class="footer-socials mt-24">
+            <a class="social-icon" href="#">
+              <i class="material-symbols-outlined" aria-hidden="true">share</i>
+            </a>
+            <a class="social-icon" href="#">
+              <i class="material-symbols-outlined" aria-hidden="true">business_center</i>
+            </a>
+            <a class="social-icon" href="#">
+              <i class="material-symbols-outlined" aria-hidden="true">code</i>
+            </a>
+            <a class="social-icon" href="#">
+              <i class="material-symbols-outlined" aria-hidden="true">photo_camera</i>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="footer-col-title">More</div>
+          <ul class="footer-links">
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links">
+            <li><a href="#">React Development</a></li>
+            <li><a href="#">UI/UX Design</a></li>
+            <li><a href="#">Performance</a></li>
+            <li><a href="#">Redesign</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center ">
+
+          <div class="col-12 col-md-6 text-center text-md-start">
+            <span>© 2026 Jaipal Shekhawat. All rights reserved.</span>
+          </div>
+
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <span class="footer-muted">Crafted with ❤️ and ☕</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script defer="True" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer="" src="js/data.js"></script>
+  <script defer="" src="js/projects.js"></script>
+  <script defer="" src="js/skills.js"></script>
+  <script defer="" src="js/theme.js"></script>
+  <script defer="" src="js/menu.js"></script>
+  <script defer="" src="js/faq.js"></script>
+  <script defer="" src="js/form.js"></script>
+  <script defer="" src="js/animations.js"></script>
+  <script defer="" src="js/main.js"></script>
 </body>
+
 </html>

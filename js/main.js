@@ -11,5 +11,5 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const themeButton = document.querySelector('.nav-theme');
-  if (themeButton) themeButton.textContent = '🌙';
+  if (themeButton) themeButton.innerHTML = '<i class="material-symbols-outlined" aria-hidden="true">dark_mode</i>';
 });

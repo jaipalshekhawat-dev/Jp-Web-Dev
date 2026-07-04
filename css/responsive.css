@@ -1,17 +1,79 @@
 /* Responsive CSS */
 
-@media (max-width: 900px) {
-    .hero-floats { display: none; }
-    .about-hero { grid-template-columns: 1fr; }
-    .about-img { max-width: 400px; aspect-ratio: 1; }
-    .contact-grid { grid-template-columns: 1fr; }
-    .form-row { grid-template-columns: 1fr; }
-    .footer-top { grid-template-columns: 1fr 1fr; }
+/* Tablet / Small Laptop */
+@media (max-width: 991px) {
+  .hero-floats {
+    display: none;
   }
 
-@media (max-width: 700px) {
-    .nav-links { display: none; }
-    .hamburger { display: flex; }
-    .footer-top { grid-template-columns: 1fr; }
-    .hero-title { font-size: 2.6rem; }
+  .about-img {
+    max-width: 400px;
+    margin: 0 auto;
+    aspect-ratio: 1;
   }
+
+  .hero-profile {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .faq-right {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 2.6rem;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-actions,
+  .about-actions,
+  .cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn,
+  .about-actions .btn,
+  .cta-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form .btn {
+    width: 100%;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 575px) {
+  .case-metrics {
+    flex-direction: column;
+  }
+
+  .featured-blog-body,
+  .contact-form-card,
+  .newsletter,
+  .cta-banner {
+    padding: 24px;
+  }
+
+  .blog-thumb-featured {
+    min-height: 220px;
+  }
+
+  .footer-bottom .row {
+    text-align: center;
+  }
+}
